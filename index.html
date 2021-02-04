@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>TAXES</title>
+        <script src="./assets/js/main.js"></script>
+    </head>
+    <body onload="calc()">   
+        <div class="container mt-5">
+            <h1 class='mb-3'>Federal Income Tax 2022 for Single</h1>
+    
+            <div class="mb-3 row">
+                <label for="Sum" class="mb-3">Your Sum($)</label>
+                <div>
+                  <input type="number" oninput='calc()'  class="form-control" id="Sum" value="50000" min='0' max='9999999999999999'>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Tax">Your Tax($)</label>
+                <div>
+                    <h4 id='taxSum'>-</h4>
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>
