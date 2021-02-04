@@ -30,12 +30,12 @@ function calc(){
 
                 tax = ((sum - limits[i-1]) * rates[i])/100 + taxLimits[i-1];
                 console.log(`${i+1}tax: ${tax}`);
-            }else if(sum > limits[5]){
+            }else if(sum > limits[limits.length-1]){
                 tax = ((sum - limits[i-1]) * rates[i])/100 + taxLimits[i-1];
             }         
         }
     }
-    
+
     tax = tax/100;
     console.log(`tax finish ${tax}`);
     tax = tax.toFixed(2);
